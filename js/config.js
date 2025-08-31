@@ -124,8 +124,8 @@ const API_SITES = {
     adult: true,
   },
   siwa: {
-    api: "https://siwazyw.tv/api.php/provide/vod/",
-    detail: "https://siwazyw.tv",
+    api: "https://siwazyw.com/api.php/provide/vod/",
+    detail: "https://siwazyw.com",
     name: "丝袜资源",
     adult: true,
   },
@@ -136,7 +136,7 @@ const API_SITES = {
   },
   lsb: {
     api: "https://apilsbzy1.com/api.php/provide/vod/",
-    detail: "https://apilsbzy1.com",
+    detail: "https://apilsbzy.com",
     name: "lsb资源",
     adult: true,
   },
