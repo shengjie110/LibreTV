@@ -8,7 +8,7 @@ const MAX_HISTORY_ITEMS = 5;
 // 注意：PASSWORD 环境变量是必需的，所有部署都必须设置密码以确保安全
 const PASSWORD_CONFIG = {
   localStorageKey: "passwordVerified", // 存储验证状态的键名
-  verificationTTL: 90 * 24 * 60 * 60 * 1000, // 验证有效期（90天，约3个月）
+  verificationTTL: 365 * 24 * 60 * 60 * 1000, // 验证有效期（365天，约1年）
 };
 
 // 网站信息配置
@@ -39,35 +39,20 @@ const API_SITES = {
     api: "https://tyyszy.com/api.php/provide/vod",
     name: "天涯资源",
   },
-  xiaomaomi: {
-    api: "https://zy.xmm.hk/api.php/provide/vod",
-    name: "小猫咪资源",
-  },
   ffzy: {
     api: "http://ffzy5.tv/api.php/provide/vod",
     name: "非凡影视",
     detail: "http://ffzy5.tv",
   },
-  heimuer: {
-    api: "https://json.heimuer.xyz/api.php/provide/vod",
-    name: "黑木耳",
-    detail: "https://heimuer.tv",
-  },
   zy360: {
     api: "https://360zy.com/api.php/provide/vod",
     name: "360资源",
-  },
-  iqiyi: {
-    api: "https://www.iqiyizyapi.com/api.php/provide/vod",
-    name: "iqiyi资源",
+    detail: "https://360zy.com",
   },
   wolong: {
     api: "https://wolongzyw.com/api.php/provide/vod",
     name: "卧龙资源",
-  },
-  hwba: {
-    api: "https://cjhwba.com/api.php/provide/vod",
-    name: "华为吧资源",
+    detail: "https://wolongzyw.com",
   },
   jisu: {
     api: "https://jszyapi.com/api.php/provide/vod",
@@ -77,14 +62,17 @@ const API_SITES = {
   dbzy: {
     api: "https://dbzy.tv/api.php/provide/vod",
     name: "豆瓣资源",
+    detail: "https://dbzy.tv",
   },
   mozhua: {
     api: "https://mozhuazy.com/api.php/provide/vod",
     name: "魔爪资源",
+    detail: "https://mozhuazy.com",
   },
   mdzy: {
     api: "https://www.mdzyapi.com/api.php/provide/vod",
     name: "魔都资源",
+    detail: "https://www.mdzyapi.com",
   },
   zuid: {
     api: "https://api.zuidapi.com/api.php/provide/vod",
@@ -97,6 +85,7 @@ const API_SITES = {
   baidu: {
     api: "https://api.apibdzy.com/api.php/provide/vod",
     name: "百度云资源",
+    detail: "https://api.apibdzy.com",
   },
   wujin: {
     api: "https://api.wujinapi.me/api.php/provide/vod",
@@ -105,53 +94,61 @@ const API_SITES = {
   wwzy: {
     api: "https://wwzy.tv/api.php/provide/vod",
     name: "旺旺短剧",
+    detail: "https://wwzy.tv",
   },
   ikun: {
     api: "https://ikunzyapi.com/api.php/provide/vod",
     name: "iKun资源",
+    detail: "https://ikunzyapi.com",
   },
   lzi: {
     api: "https://cj.lziapi.com/api.php/provide/vod/",
     name: "量子资源站",
   },
   jkun: {
-    api: "https://jkunzyapi.com",
+    api: "https://jkunzyapi.com/api.php/provide/vod/",
+    detail: "https://jkunzyapi.com",
     name: "jkun资源",
     adult: true,
   },
   bwzy: {
-    api: "https://api.bwzym3u8.com",
+    api: "https://api.bwzym3u8.com/api.php/provide/vod/",
+    detail: "https://api.bwzym3u8.com",
     name: "百万资源",
     adult: true,
   },
   souav: {
-    api: "https://api.souavzy.vip",
+    api: "https://api.souavzy.vip/api.php/provide/vod/",
+    detail: "https://api.souavzy.vip",
     name: "souav资源",
     adult: true,
   },
   siwa: {
-    api: "https://siwazyw.tv",
+    api: "https://siwazyw.tv/api.php/provide/vod/",
+    detail: "https://siwazyw.tv",
     name: "丝袜资源",
     adult: true,
   },
   r155: {
-    api: "https://155api.com",
+    api: "https://155api.com/api.php/provide/vod/",
     name: "155资源",
     adult: true,
   },
   lsb: {
-    api: "https://apilsbzy1.com",
+    api: "https://apilsbzy1.com/api.php/provide/vod/",
+    detail: "https://apilsbzy1.com",
     name: "lsb资源",
     adult: true,
   },
   huangcang: {
-    api: "https://hsckzy.vip",
+    api: "https://hsckzy.vip/api.php/provide/vod/",
+    detail: "https://hsckzy.vip",
     name: "黄色仓库",
     adult: true,
-    detail: "https://hsckzy.vip", // 添加detail URL以便特殊处理
   },
   ckzy: {
-    api: "https://www.ckzy1.com",
+    api: "https://www.ckzy1.com/api.php/provide/vod/",
+    detail: "https://www.ckzy1.com",
     name: "CK资源",
     adult: true,
   },
