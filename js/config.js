@@ -112,8 +112,8 @@ const API_SITES = {
     adult: true,
   },
   bwzy: {
-    api: "https://api.bwzym3u8.com/api.php/provide/vod/",
-    detail: "https://api.bwzym3u8.com",
+    api: "https://api.bwzyz.com/api.php/provide/vod/",
+    detail: "https://api.bwzyz.com",
     name: "百万资源",
     adult: true,
   },
@@ -123,21 +123,9 @@ const API_SITES = {
     name: "souav资源",
     adult: true,
   },
-  siwa: {
-    api: "https://siwazyw.com/api.php/provide/vod/",
-    detail: "https://siwazyw.com",
-    name: "丝袜资源",
-    adult: true,
-  },
   r155: {
     api: "https://155api.com/api.php/provide/vod/",
     name: "155资源",
-    adult: true,
-  },
-  lsb: {
-    api: "https://apilsbzy1.com/api.php/provide/vod/",
-    detail: "https://apilsbzy.com",
-    name: "lsb资源",
     adult: true,
   },
   huangcang: {
