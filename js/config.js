@@ -111,12 +111,6 @@ const API_SITES = {
     name: "jkun资源",
     adult: true,
   },
-  bwzy: {
-    api: "https://api.bwzyz.com/api.php/provide/vod/",
-    detail: "https://api.bwzyz.com",
-    name: "百万资源",
-    adult: true,
-  },
   souav: {
     api: "https://api.souavzy.vip/api.php/provide/vod/",
     detail: "https://api.souavzy.vip",
